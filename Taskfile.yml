@@ -8,9 +8,9 @@ vars:
 tasks:
   up:
     cmds:
-      - docker-compose up --build -d
+      - docker compose up --build -d
     silent: true
   down:
     cmds:
-      - docker-compose down
+      - docker compose down
     silent: true
