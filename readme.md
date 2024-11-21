@@ -3,8 +3,14 @@
 ## Getting Started
 
 First start postgresql database and redis by running the following command in root directory
+```shell
+task up
 ```
-docker-compose up --build -d
+
+To Stop the Running Process use
+
+```shell
+task down
 ```
 
 ## Web links
