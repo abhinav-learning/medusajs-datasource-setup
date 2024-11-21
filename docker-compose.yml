@@ -2,13 +2,25 @@ version: "3.9"
 services:
   db:
     image: postgres
+    container_name: postgres
     volumes:
-      - postgres-db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=medusa_db
       - POSTGRES_USER=yourusername
       - POSTGRES_PASSWORD=yourpassword
     ports:
       - 5432:5432
+
+  cache:
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - cache:/data
+
 volumes:
-  postgres-db:
+  db:
+    driver: local
+  cache:
+    driver: local
