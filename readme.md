@@ -1,5 +1,9 @@
 # MedusaJS E-commerce Project Datasource Starter
 
+## Tools to be installed 
+
+First install [Task](https://taskfile.dev)
+
 ## Getting Started
 
 First start postgresql database and redis by running the following command in root directory
@@ -13,7 +17,3 @@ To Stop the Running Process use
 task down
 ```
 
-## Web links
-
-* [MedusaJS Website](https://medusajs.com/)
-* [MedusaJS Setup Guide](https://docs.medusajs.com/create-medusa-app)
