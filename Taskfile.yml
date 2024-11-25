@@ -1,6 +1,6 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 vars:
   GREETING: Hello, World!
@@ -10,7 +10,13 @@ tasks:
     cmds:
       - docker compose up --build -d
     silent: true
+    desc: "Start the Datasources"
   down:
     cmds:
       - docker compose down
     silent: true
+    desc: "Stop the Datasources"
+  expose:
+    cmds:
+      - ngrok http 8000
+    desc: "Expose the Storefront running on port 8000 to Internet"
